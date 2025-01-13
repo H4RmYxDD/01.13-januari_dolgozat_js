@@ -10,8 +10,8 @@ function getCount(str) {
     return count;
 }
 //masodik feladat
-function filter_list(input) {
-    return input.filter(item => typeof item === 'number');
+function filter_list(l) {
+    return l.filter(l => typeof l === 'number');
 }
 //harmadik feladat
 function hasUniqueChars(str) {
@@ -25,12 +25,12 @@ function hasUniqueChars(str) {
     return true;
 }
 //negyedik feladat
-function divisors(n) {
+function divisors(integer) {
     const result = [];
-    for (let i = 2; i < n; i++) {
-        if (n % i === 0) {
+    for (let i = 2; i < integer; i++) {
+        if (integer % i === 0) {
             result.push(i);
         }
     }
-    return result.length > 0 ? result : `${n} is prime`;
+    return result.length > 0 ? result : `${integer} is prime`;
 }
